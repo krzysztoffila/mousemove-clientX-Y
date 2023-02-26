@@ -10,8 +10,8 @@ document.body.addEventListener('mousemove', e => {
   const height = window.innerHeight
 
   /* implementacja kolorow */
-  const red = x / width * 100;
-  const green = y / height * 100;
-  const blue = ((x / width * 100) + (y / height * 100)) / 2;
-  document.body.style.backgroundColor = `rgb(${red}%,${green}%,${blue}%)`
+  const r = x / width * 100; //red
+  const g = y / height * 100; //green
+  const b = ((x / width * 100) + (y / height * 100)) / 2; //blue
+  document.body.style.backgroundColor = `rgb(${r}%,${g}%,${b}%)`
 })
