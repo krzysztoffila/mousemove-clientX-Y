@@ -13,7 +13,7 @@ document.body.addEventListener('mousemove', e => {
 
   /* implementacja kolorow */
   const red = Math.floor(x / width * 255)
-  const green = Math.floor(y / width * 255);
-  const blue = Math.floor((x / width * 255) / Math.floor(y / width * 255))
+  const green = Math.floor(y / height * 255);
+  const blue = Math.floor((x / width * 255) / Math.floor(y / height * 255))
   document.body.style.backgroundColor = `rgb(${red}%,${green}%,${blue}%)`
 })
